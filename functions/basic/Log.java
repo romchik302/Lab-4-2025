@@ -9,7 +9,7 @@ public class Log
 
     public Log(double inputLogBase)
     {
-        if(inputLogBase < 0)
+        if(inputLogBase < 0 || inputLogBase == 1)
         {
             throw new IllegalArgumentException("Недопустимое основание логарифма");
         }
